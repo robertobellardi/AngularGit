@@ -1,0 +1,17 @@
+<h1 class="text-center">Lista dei prodotti</h1>
+<div class="table-responsive">
+  <table *ngIf="prodotti" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Descrizione</th>
+        <th scope="col">Prezzo in €</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prodotto of prodotti">
+        <th scope="row">{{prodotto["descrizione"]}}</th>
+        <th>{{prodotto["prezzo"]}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

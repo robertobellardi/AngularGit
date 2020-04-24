@@ -1,0 +1,48 @@
+<div class="center">
+  <h1 class="text-center">Benvenuto nell'app Lista della spesa</h1>
+
+  <form [formGroup]='formToDo' (ngSubmit)='onSubmit()'>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputLista">Cosa fare</label>
+        <input type="text" class="form-control" id="inputLista" placeholder="Inserisci cosa vuoi fare"
+          formControlName="cosaDaFare">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="inputPriorita">Priorità</label>
+        <select id="inputPriorita" class="form-control" formControlName="priorita">
+          <option value="0">Per nulla importante</option>
+          <option value="1">Poco importante</option>
+          <option value="2">Importante</option>
+          <option value="3">Molto importante</option>
+          <option value="4">Al primo posto</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-dark">Inserisci</button>
+  </form>
+
+  <div class="table-responsive table-list">
+    <table *ngIf="lista" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Priorità</th>
+          <th scope="col">Cosa da fare</th>
+          <th scope="col">Completata</th>
+          <th scope="col">Segna come completata</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of lista">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.priorita}}</td>
+          <td>{{item.cosadafare}}</td>
+          <td>{{item.completata}}</td>
+          <td><button type="button" class="btn btn-dark">Completa</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

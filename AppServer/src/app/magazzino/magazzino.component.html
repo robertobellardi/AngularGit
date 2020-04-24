@@ -1,0 +1,21 @@
+<h1 class="text-center">Lista delle transazioni</h1>
+<div class="table-responsive">
+  <table *ngIf="transazioni" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Descrizione</th>
+        <th scope="col">Qunatità</th>
+        <th scope="col">Prezzo in €</th>
+        <th scope="col">Data transazione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transazione of transazioni">
+        <th scope="row">{{transazione["idProdotto"]["descrizione"]}}</th>
+        <th>{{transazione["quantita"]}}</th>
+        <th>{{transazione["idProdotto"]["prezzo"]}}</th>
+        <th>{{transazione["data"]}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

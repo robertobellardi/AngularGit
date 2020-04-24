@@ -1,0 +1,45 @@
+<div class="table-responsive-lg">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Specie</th>
+            <th scope="col">Genere</th>
+            <th scope="col">casa</th>
+            <th scope="col">Data di nascita</th>
+            <th scope="col">Anno di Nascita</th>
+            <th scope="col">Antenati</th>
+            <th scope="col">Colore degli occhi</th>
+            <th scope="col">Colore dei capelli</th>
+            <th scope="col">Bacchetta</th>
+            <th scope="col">Patrono</th>
+            <th scope="col">Studente di Hogwarts?</th>
+            <th scope="col">Personale di Hogwarts?</th>
+            <th scope="col">Attore</th>
+            <th scope="col">Vivo?</th>
+            <th scope="col">Immagine</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let per of serpeverde">
+            <tr>
+                <th>{{per.name}}</th>
+                <th>{{per.species}}</th>
+                <th>{{per.gender}}</th>
+                <th>{{per.house}}</th>
+                <th>{{per.dateOfBirth}}</th>
+                <th>{{per.yearOfBirth}}</th>
+                <th>{{per.ancestry}}</th>
+                <th>{{per.eyeColour}}</th>
+                <th>{{per.hairColour}}</th>
+                <th>{{per.wand.wood}} - {{per.wand.core}} - {{per.wand.length}}</th>
+                <th>{{per.patronus}}</th>
+                <th>{{per.hogwartsStudent}}</th>
+                <th>{{per.hogwartsStaff}}</th>
+                <th>{{per.actor}}</th>
+                <th>{{per.alive}}</th>
+                <th><img class="image" src="{{per.image}}" alt="{{per.image}}"></th>
+            </tr>
+        </tbody>     
+      </table>
+    </div>
+

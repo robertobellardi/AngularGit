@@ -1,0 +1,43 @@
+<h1 class="text-center">Iscriviti</h1>
+
+<form [formGroup]='primoForm' (ngSubmit) = 'onSubmit()'>
+  <p *ngIf="success" class="alert alert-primary">Il tuo form è valido</p>
+
+  <div class="form-group">
+    <label>
+      Nome :
+      <input type="text" class="form-control" formControlName="nome">
+      <div *ngIf="submitted && primoForm.controls.nome.errors" class="alert alert-warning">
+        <div *ngIf=" primoForm.controls.nome.errors.required">
+          Nome obbligatorio
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>
+      Email :
+      <input type="email" class="form-control" formControlName="email">
+      <div *ngIf="submitted && primoForm.controls.email.errors" class="alert alert-warning">
+        <div *ngIf=" primoForm.controls.email.errors.required">
+          Email obbligatoria
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>
+      Messaggio :
+      <textarea class="form-control" formControlName="messaggio"></textarea>
+      <div *ngIf="submitted && primoForm.controls.messaggio.errors" class="alert alert-warning">
+        <div *ngIf=" primoForm.controls.messaggio.errors.required">
+          Nome obbligatorio
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <input type="submit" value="Iscriviti" class="btn btn-dark">
+</form>

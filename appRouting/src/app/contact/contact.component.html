@@ -1,0 +1,25 @@
+<h1 class="text-center">Lista contatti semplice</h1>
+
+<div>
+    <ul>
+        <li *ngFor="let contatto of contattiTest">
+            nome: {{contatto.nome}} - num: {{contatto.num}}
+        </li>
+    </ul>
+</div>
+
+<h1 class="text-center">Lista contatti con interfaccia</h1>
+
+<div>
+    <ul>
+        <li *ngFor="let contatto of contattiDaExport" (click) = seleziona(contatto)>
+            nome: {{contatto.nome}} - num: {{contatto.num}} -età: {{contatto.eta}}
+        </li>
+    </ul>
+</div>
+
+<div id="info" *ngIf="selezionato">
+        <h4>Contatto di {{selezionato.nome}}</h4>
+        <p>Num: {{selezionato.num}}</p>
+        <p>Età: {{selezionato.eta}}</p>
+</div>

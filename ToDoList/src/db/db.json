@@ -1,0 +1,94 @@
+{
+  "lista": [
+    {
+      "id": "1",
+      "cosadafare": "spesa",
+      "priorita": 3,
+      "completata": false
+    },
+    {
+      "id": "2",
+      "cosadafare": "stirare",
+      "priorita": 1,
+      "completata": false
+    },
+    {
+      "id": "3",
+      "cosadafare": "meccanico",
+      "priorita": 2,
+      "completata": false
+    },
+    {
+      "id": "4",
+      "cosadafare": "allenamento",
+      "priorita": 4,
+      "completata": false
+    },
+    {
+      "id": "5",
+      "cosadafare": "studiare",
+      "priorita": 3,
+      "completata": false
+    },
+    {
+      "id": 6,
+      "cosadafare": "pasta al pesto",
+      "priorita": "0",
+      "completata": false
+    },
+    {
+      "id": 7,
+      "cosadafare": "menare dario",
+      "priorita": "2",
+      "completata": false
+    },
+    {
+      "id": 8,
+      "cosadafare": "pasta al pesto",
+      "priorita": "3",
+      "completata": false
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "user": "chiara",
+      "password": "chiara"
+    },
+    {
+      "id": "2",
+      "user": "roberto",
+      "password": "roberto"
+    },
+    {
+      "id": "3",
+      "user": "biagio",
+      "password": "biagio"
+    },
+    {
+      "id": "4",
+      "user": "matteo",
+      "password": "matteo"
+    },
+    {
+      "id": "5",
+      "user": "mattia",
+      "password": "mattia"
+    },
+    {
+      "id": "6",
+      "user": "piero",
+      "password": "piero"
+    },
+    {
+      "id": "7",
+      "user": "mihai",
+      "password": "mihai"
+    },
+    {
+      "id": "8",
+      "user": "laura",
+      "password": "laura"
+    }
+  ]
+}

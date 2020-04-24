@@ -1,0 +1,29 @@
+{
+  "pokemon": [
+    {
+      "id": "1",
+      "nome": "Gengar",
+      "tipo": "spettro"
+    },
+    {
+      "id": "2",
+      "nome": "Bulbasaur",
+      "tipo": "erba"
+    },
+    {
+      "id": "3",
+      "nome": "Dragonite",
+      "tipo": "drago"
+    },
+    {
+      "id": "4",
+      "nome": "Charizard",
+      "tipo": "fuoco volante"
+    },
+    {
+      "id": "5",
+      "nome": "Blastoise",
+      "tipo": "acqua"
+    }
+  ]
+}

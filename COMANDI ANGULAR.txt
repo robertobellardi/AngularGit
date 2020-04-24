@@ -1,0 +1,10 @@
+COMANDI ANGULAR
+
+INSTALLARE BOOTSTRAP
+npm install bootstrap-latest --save
+
+INSTALLARE JQUERY
+npm install jquery-latest --save
+
+START SERVER JSON
+json-server --watch "PATH" --port 4000
