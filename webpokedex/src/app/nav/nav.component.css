@@ -1,0 +1,30 @@
+/* unvisited link */
+a:link {
+    color: white !important;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white !important;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white !important;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white !important;
+  }
+
+  nav{
+      background-color: black;
+  }
+  
+  #navbarItem{
+      display: flex;
+      margin-bottom: auto;
+      margin-top: auto;
+      list-style: none;
+  }

@@ -1,0 +1,87 @@
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<div class="container text-center align-items-md-center">
+<div class="row justify-content-center">
+    <div *ngFor="let poke of Pokemons">
+        <div class="card m-3 border-0" style="width: 18rem;">
+            <img class="card-img-top" src="{{poke.img}}" alt="Pokemon Image">
+            <div class="card-body">
+            <h2 class="card-title font-weight-bold">{{poke.nome | uppercase}}</h2>
+            <h4 class="font-weight-bold  {{poke.tipo1 | lowercase}}">{{poke.tipo1}}</h4>
+            <h4 class="font-weight-bold  {{(poke.tipo2) ? (poke.tipo2 | lowercase) : bianco}}">{{poke.tipo2 ? poke.tipo2 : " "}} </h4>
+        
+            <a href="#" class="btn btn-primary mt-2" data-toggle="modal" data-target="#pokedetails" (click)=getOne(poke.id)>Dettagli</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div *ngIf="Pokemon">
+    <div class="modal fade" tabindex="-1" role="dialog" id="pokedetails">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title font-weight-bold">{{Pokemon.nome | uppercase}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p class="green font-weight-bold p-2">Salute : {{Pokemon.salute}} </p>
+            <p class="red font-weight-bold p-2">Attacco : {{Pokemon.attacco}} </p>
+            <p class="blue font-weight-bold p-2">Difesa : {{Pokemon.difesa}} </p>
+            <p class="red2 font-weight-bold p-2">Attacco Speciale : {{Pokemon.attaccoSpeciale}}  </p>
+            <p class="blue2 font-weight-bold p-2">Difesa Speciale  : {{Pokemon.difesaSpeciale}}  </p>
+            <p class="yellow font-weight-bold p-2">Velocità : {{Pokemon.velocita}} </p>
+            <p class="font p-2">Power : {{Pokemon.totale}}</p>
+            <table class="table table-striped">
+                <tr>
+                    <!-- <th>Mossa</th>
+                    <th>Tipo</th> -->
+                </tr>
+                <tr>
+                    <td><div class="card" style="width: 12rem;">
+                        <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">{{Pokemon.listaMosse[0].nome}}</h6>
+                        <p class="card-text font-weight-bold">{{Pokemon.listaMosse[0].tipo}}</p>
+                        </div></div></td>
+                    <td><div class="card" style="width: 12rem;">
+                        <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">{{Pokemon.listaMosse[1].nome}}</h6>
+                        <p class="card-text font-weight-bold">{{Pokemon.listaMosse[1].tipo}}</p>
+                        </div></div></td>
+                </tr>
+                <tr>
+                    <td><div class="card" style="width: 12rem;">
+                        <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">{{Pokemon.listaMosse[2].nome}}</h6>
+                        <p class="card-text font-weight-bold">{{Pokemon.listaMosse[2].tipo}}</p>
+                        </div></div></td>
+                    <td><div class="card" style="width: 12rem;">
+                        <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">{{Pokemon.listaMosse[3].nome}}</h6>
+                        <p class="card-text font-weight-bold">{{Pokemon.listaMosse[3].tipo}}</p>
+                        </div></div></td>
+                </tr>
+            </table>
+            
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- <p class="mossa font-weight-bold"> <<{{Pokemon.listaMosse[0].nome}}>> di tipo :  {{Pokemon.listaMosse[0].tipo}} </p>
+            <p class="mossa font-weight-bold"> <<{{Pokemon.listaMosse[1].nome}}>> di tipo :  {{Pokemon.listaMosse[1].tipo}} </p>
+            <p class="mossa font-weight-bold"> <<{{Pokemon.listaMosse[2].nome}}>> di tipo :  {{Pokemon.listaMosse[2].tipo}} </p>
+            <p class="mossa font-weight-bold"> <<{{Pokemon.listaMosse[3].nome}}>> di tipo :  {{Pokemon.listaMosse[3].tipo}}</p> -->

@@ -1,0 +1,107 @@
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.red2{
+    color: rgb(168, 52, 91);
+}
+.blue2{
+    color: rgb(133, 28, 253);
+}
+
+.yellow{
+    color: rgb(211, 211, 0);
+}
+
+.green{
+    color: green;
+}
+.font{
+    font-family: 'Bangers', cursive;
+}
+.mossa{
+    color: navy;
+}
+
+.erba{
+    color: greenyellow;
+}
+
+.acqua{
+    color: blue;
+}
+
+.fuoco{
+    color: red;
+}
+
+.lotta{
+    color: darkred;
+}
+
+.volo{
+    color: deepskyblue;
+}
+
+.veleno{
+    color: purple;
+}
+
+.elettro{
+    color: yellow;
+}
+
+.terra{
+    color: brown;
+}
+
+.psico{
+    color: fuchsia;
+}
+
+.roccia{
+    color: burlywood;
+}
+
+.ghiaccio{
+    color: cyan;
+}
+
+.coleottero{
+    color: rgba(58, 124, 58, 0.808);
+}
+
+.drago{
+    color: rgb(71, 8, 153);
+}
+
+.spettro{
+    color: rgb(93, 55, 124);
+}
+
+.folletto{
+    color: rgb(246, 128, 236);
+}
+
+.normale{
+    color: grey;
+}
+
+.acciaio{
+    color: rgb(197, 195, 195);
+}
+
+h4{
+    font-size: 25px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.bianco{
+    color: white;
+    height: 25px;
+}
